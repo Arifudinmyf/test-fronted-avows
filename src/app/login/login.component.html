@@ -1,0 +1,113 @@
+<div class="content">
+  <div class="content-container">
+    <div class="title">
+      <span class="font-arifudin-bold text-2xl">Login Arifudin Test</span>
+    </div>
+    <div class="content-form">
+      <!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="username">
+          <shared-input
+            [config]="{
+              label: 'Nama Admin'
+            }"
+            formControlName="username"
+            [ngClass]="{ 'is-invalid': submitted && f['username'].errors }">
+          </shared-input>
+          <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+            <div *ngIf="f['username'].errors['required']">Username is required</div>
+          </div>
+        </div>
+        <div class="pass">
+          <shared-input
+            typeInput="password"
+            [config]="{
+              label: 'Password'
+            }"
+            [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+          </shared-input>
+          <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+            <div *ngIf="f['password'].errors['required']">Password is required</div>
+          </div>
+        </div>
+        <div class="action">
+          <button [disabled]="loading"  class="action-login">
+            <svg *ngIf="loading" class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+            </svg>
+            Login</button>
+        </div>
+        <div *ngIf="error" class="mt-3 mb-0">{{error}}</div>
+      </form> -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="contents">
+          <div class="username">
+            <div class="label-input">
+              <div class="header-label">Username
+                <span class="text-red-700">*</span>
+              </div>
+            </div>
+            <input class="content-input" type="text" placeholder="Input Data" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f['username'].errors }">
+            <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+              <div *ngIf="f['username'].errors['required']">Username is required</div>
+            </div>
+          </div>
+
+          <div class="pass">
+            <div class="label-input">
+              <div class="header-label">Password
+                <span class="text-red-700">*</span>
+              </div>
+            </div>
+            <input class="content-input" type="password" placeholder="Input Data" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+            <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+              <div *ngIf="f['password'].errors['required']">Password is required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action">
+          <button [disabled]="loading"  class="action-login">
+            <svg *ngIf="loading" class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+            </svg>
+            Login</button>
+        </div>
+        <div *ngIf="error" class="mt-3 mb-0">{{error}}</div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="col-md-6 offset-md-3 mt-5">
+  <div class="alert alert-info">
+      Username: test<br />
+      Password: test<br />
+      *** See fake-backend.ts authenticate() for auth implementation
+  </div>
+  <div class="card">
+      <h4 class="card-header">Basic Auth Login Example</h4>
+      <div class="card-body">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['username'].errors }" />
+                  <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+                      <div *ngIf="f['username'].errors['required']">Username is required</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" />
+                  <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                      <div *ngIf="f['password'].errors['required']">Password is required</div>
+                  </div>
+              </div>
+              <button [disabled]="loading" class="btn btn-primary">
+                  <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                  Login
+              </button>
+              <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+          </form>
+      </div>
+  </div>
+</div> -->

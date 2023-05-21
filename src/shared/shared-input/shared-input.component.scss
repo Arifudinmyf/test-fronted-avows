@@ -1,0 +1,15 @@
+.content-container {
+  @apply relative w-full;
+
+  .label-input {
+    @apply w-full mb-2 mt-2;
+
+    .header-label {
+      @apply text-sm font-poppins-regular;
+    }
+  }
+
+  .content-input {
+    @apply flex justify-center items-center w-full p-3 outline-teal-500 rounded-lg shadow-lg;
+  }
+}

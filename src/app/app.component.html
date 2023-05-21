@@ -1,4 +1,4 @@
-<h1 class=" flex justify-center items-center text-3xl font-bold underline text-fuchsia-500">
-  Hello world!
-</h1>
+<div class="contet" *ngIf="currentUser">
+  <a class="nav-item nav-link" (click)="logout()">Logout</a>
+</div>
 <router-outlet></router-outlet>

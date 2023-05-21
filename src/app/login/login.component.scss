@@ -1,0 +1,47 @@
+.content {
+  padding: 100px;
+  @apply relative flex justify-center items-center w-full h-full;
+
+  &-container {
+    width: 400px;
+    @apply p-4 rounded-lg shadow-lg bg-blue-200;
+
+    .title {
+      @apply text-xl font-bold flex justify-center p-5;
+    }
+
+    .content-form {
+      @apply w-full ;
+
+      .contents {
+        @apply relative w-full;
+
+        .label-input {
+          @apply w-full mb-2 mt-2;
+
+          .header-label {
+            @apply text-sm font-poppins-regular;
+          }
+        }
+
+        .content-input {
+          @apply flex justify-center items-center w-full p-3 outline-teal-500 rounded-lg shadow-lg;
+        }
+      }
+    }
+
+    .action {
+      @apply relative flex justify-center items-center w-full mt-7;
+
+      .action-login {
+        width: 100px;
+        @apply hover:shadow-md p-2 flex justify-center items-center font-poppins-bold text-sm text-white bg-blue-700 rounded-full
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    @apply p-6
+  }
+
+}

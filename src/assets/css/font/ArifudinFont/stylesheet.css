@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'arifudin-bold';
+  src:  url('ArifudinFont/ArifudinFont-Bold.eot');
+  src:  url('ArifudinFont/ArifudinFont-Bold.svg') format('svg'),
+        url('ArifudinFont/ArifudinFont-Bold.ttf') format('truetype'),
+        url('ArifudinFont/ArifudinFont-Bold.woff') format('woff'),
+        url('ArifudinFont/ArifudinFont-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'arifudin-regular';
+  src:  url('ArifudinFont/ArifudinFont-Regular.eot');
+  src:  url('ArifudinFont/ArifudinFont-Regular.svg') format('svg'),
+        url('ArifudinFont/ArifudinFont-Regular.ttf') format('truetype'),
+        url('ArifudinFont/ArifudinFont-Regular.woff') format('woff'),
+        url('ArifudinFont/ArifudinFont-Regular.woff2') format('woff2');
+}
